@@ -1,5 +1,5 @@
 @include('layouts.defaultHeader')
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="links">
     <a href="#">1</a>
     <a href="#">2</a>
@@ -11,7 +11,7 @@
     <a href="#">8</a>
 </div>
     <a class="navbar-brand" href="#">Main elements
-        <img src="{{URL('storage/icons/shopping-bag.svg')}}" width="30" height="30" alt="No icon">
+        <img src="" width="30" height="30" alt="No icon">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,8 +35,5 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <a class="navbar-brand" href="#">Cart
-            <img src="{{URL('storage/icons/shopping-cart.svg')}}" width="30" height="30" alt="No icon">
-        </a>
     </div>
 </nav>
