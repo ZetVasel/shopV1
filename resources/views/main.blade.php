@@ -2,6 +2,10 @@
 
     @include('headers.header')
 <hr>
+
+<a href="{{'frontend.show'}}">Show Product</a>
+
+<hr>
 <div class="container">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
