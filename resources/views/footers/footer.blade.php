@@ -50,8 +50,8 @@
         <a href="#"><span class="flag"> <img src="{{URL('storage/flags/kazakhstan.svg')}}" width="30" height="30" alt="No icon"></span>Kazakhstan</a>
         <a href="#"><span class="flag"> <img src="{{URL('storage/flags/moldova.svg')}}" width="30" height="30" alt="No icon"></span>Moldova</a>
         <a href="#"><span class="flag"> <img src="{{URL('storage/flags/poland.svg')}}" width="30" height="30" alt="No icon"></span>Poland</a>
-        <a href="#"><span class="flag"> <img src="{{URL('')}}" width="30" height="30" alt="No icon"></span>Romania</a>
-        <a href="#"><span class="flag"> <img src="{{URL('')}}" width="30" height="30" alt="No icon"></span>Slovakia</a>
+        <a href="#"><span class="flag"> <img src="{{URL('storage/flags/romania.svg')}}" width="30" height="30" alt="No icon"></span>Romania</a>
+        <a href="#"><span class="flag"> <img src="{{URL('storage/flags/slovakia.svg')}}" width="30" height="30" alt="No icon"></span>Slovakia</a>
 
     </div>
 

@@ -3,7 +3,7 @@
 
     <div class="container" style="height: 300px">
         <div class="row justify-content-center">
-            <h1>Link-1</h1>
+            <h1>Link-2</h1>
         </div>
     </div>
 

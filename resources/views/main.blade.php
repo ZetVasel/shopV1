@@ -4,11 +4,11 @@
 <hr>
 
 <a href="{{'frontend.show'}}">Show Product</a>
-
+<a href="{{'frontend.showImage'}}">Show Image</a>
 <hr>
 <div class="container">
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+           <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -20,7 +20,7 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif -->
 
 
 

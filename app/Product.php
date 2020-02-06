@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $table = [];
+    public function path(){
+        return url('product/'. $this->id); // for enter in product
+    }
+
+    protected $table = 'product';
+    protected $fillable = [
+        'productName', 'image', 'description',
+    ];
 }
