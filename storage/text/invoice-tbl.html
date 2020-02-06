@@ -1,0 +1,318 @@
+<table style="width: 100%; font-family: Arial, Helvetica, sans-serif; 85%; color: #999; border-collapse: collapse; padding: 0; margin: 0;" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td style="text-align: left; height: 150px;" valign="top" width="234%"><img src="https://rxvndx5506.trial.sugarcrm.eu/custom/themes/default/images/pdf_logo_logo.png" alt="" height="150" /></td>
+			<td width="6%">&nbsp;</td>
+			<td style="text-align: left; font-size: 100%; color: #999; font-family: Arial, Helvetica, sans-serif;" valign="top" width="59%" height="150">
+				<strong style="font-weight: bold; color: #000;">Company name</strong><br />Company street and number<br />Company Town, State Zip Code<br />Country<br /><br /><strong style="font-weight: bold; color: #000;">Sales Person</strong>:<br /> {$fields.assigned_user_link.name}
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" height="30" style="text-align: left; font-size: 150%; color: #000; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; font-weight: bold; color: 000;">INVOICE</td>
+		</tr>
+		<tr>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+			<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="height: 2px; background: #ddd; font-size: 1px;" valign="top" bgcolor="#dddddd" width="234%" height="2">&nbsp;</td>
+			<td style="height: 2px; font-size: 1px;" width="6%" height="2">&nbsp;</td>
+			<td style="height: 2px; background: #ddd; font-size: 1px;" bgcolor="#dddddd" width="59%" height="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;" width="234%">
+				<table style="width: 95%; font-family: Arial, Helvetica, sans-serif; color: #999" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td style="height: 15px; font-size: 1px;" height="15">&nbsp;</td>
+							<td style="height: 15px; font-size: 1px;" height="15">&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="100%">Bill To</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="100%">Ship To</td>
+						</tr>
+						<tr>
+							<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+							<td style="height: 10px; font-size: 1px;" height="10">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top">{$fields.billing_contact_name}</td>
+							<td valign="top">{$fields.shipping_contact_name}</td>
+						</tr>
+						<tr>
+							<td valign="top">{$fields.billing_account_name}</td>
+							<td valign="top">{$fields.shipping_account_name}</td>
+						</tr>
+						<tr>
+							<td style="height: 5px; font-size: 1px;" height="5">&nbsp;</td>
+							<td style="height: 5px; font-size: 1px;" height="5">&nbsp;</td>
+						</tr>
+						<tr>
+							<td valign="top">{$fields.billing_address_street}</td>
+							<td valign="top">{$fields.shipping_address_street}</td>
+						</tr>
+						<tr>
+							<td valign="top">{if $fields.billing_address_city!=""}{$fields.billing_address_city},{/if} {if $fields.billing_address_state!=""}{$fields.billing_address_state},{/if} {$fields.billing_address_postalcode}</td>
+							<td valign="top">{if $fields.shipping_address_city!=""}{$fields.shipping_address_city},{/if} {if $fields.shipping_address_state!=""}{$fields.shipping_address_state},{/if} {$fields.shipping_address_postalcode}</td>
+						</tr>
+						<tr>
+							<td valign="top">{$fields.billing_address_country}</td>
+							<td valign="top">{$fields.shipping_address_country}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td width="6%">&nbsp;</td>
+			<td style="vertical-align: top;" valign="top" width="59%">
+				<table style="width: 100%; color: #999" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td style="height: 15px; font-size: 1px;" height="15">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="100%"><strong style="text-align: left; font-weight: bold; color: #000;">Invoice number:</strong><br /> {$fields.quote_num}</td>
+						</tr>
+						<tr style="height: 8px; font-size: 1px;">
+							<td style="height: 8px; font-size: 1px;" height="8">&nbsp;</td>
+						</tr>
+						<tr>
+							<td><strong style="text-align: left; font-weight: bold; color: #000;">Valid until</strong>:<br /> {$fields.date_quote_expected_closed}</td>
+						</tr>
+						<tr style="height: 8px; font-size: 1px;">
+							<td style="height: 8px; font-size: 1px;" height="8">&nbsp;</td>
+						</tr>
+						<tr>
+							<td><strong style="text-align: left; font-weight: bold; color: #000;">Purchase Order Num</strong>:<br /> {$fields.purchase_order_num}</td>
+						</tr>
+						<tr style="height: 8px; font-size: 1px;">
+							<td style="height: 8px; font-size: 1px;" height="8">&nbsp;</td>
+						</tr>
+						<tr>
+							<td><strong style="text-align: left; font-weight: bold; color: #000;">Payment Terms</strong>:<br /> {$fields.payment_terms}</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr style="height: 1px; font-size: 1px;">
+			<td colspan="3" valign="top">
+				<p style="height: 1px; font-size: 1px;">{foreach from=$product_bundles item="bundle"}</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="top" height="30">
+				<h3 style="width: 100%; font-family: Arial, Helvetica, sans-serif; color: #000; padding: 0; margin: 0;">{$bundle.name}</h3>
+			</td>
+		</tr>
+		<tr style="height: 30px; font-size: 1px;">
+			<td colspan="3" valign="top" height="30">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="top">
+				<table style="width: 100%; font-family: Arial, Helvetica, sans-serif; color: #999; border-collapse: collapse; padding: 0; margin: 0;" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="70%" height="20">Quantity</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="105%" height="20">Part Number</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="175%" height="20">Quoted Line Item</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="70%" height="20">List Price</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="70%" height="20">Unit Price</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="70%" height="20">Discount:</td>
+							<td style="text-align: left; font-weight: bold; color: #000;" width="140%" height="20">Ext. Price</td>
+						</tr>
+						<tr>
+							<td style="height: 2px; background: #ddd; font-size: 1px;" colspan="7" valign="top" bgcolor="#dddddd" height="2">&nbsp;</td>
+						</tr>
+						<!--START_PRODUCT_LOOP-->
+						<tr style="height: 7px; font-size: 1px;">
+							<td style="height: 7px; font-size: 1px;" colspan="7" valign="top" height="7">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="70%">{$product.quantity}</td>
+							<td width="105%">{$product.mft_part_num}</td>
+							<td width="175%">{$product.name}{if isset($product.list_price)}<br />{$product.description}{/if}</td>
+							<td width="70%">{$product.list_price}</td>
+							<td width="70%">{$product.discount_price}</td>
+							<td width="70%">{$product.discount_amount}</td>
+							<td width="140%">{$product.ext_price}</td>
+						</tr>
+						<!--END_PRODUCT_LOOP--></tbody>
+					</table>
+					<table style="width: 100%; font-family: Arial, Helvetica, sans-serif; color: #999; border-collapse: collapse; padding: 0; margin: 0;" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr style="height: 2px; background: #ddd; font-size: 1px;">
+								<td style="height: 2px; background: #ddd; font-size: 1px;" colspan="3" valign="top" bgcolor="#dddddd" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td width="45%">Subtotal:</td>
+								<td width="60%">{$bundle.subtotal}</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td width="45%">Discount:</td>
+								<td width="60%">{$bundle.deal_tot}</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr style="height: 2px; background: #ddd; font-size: 1px;">
+								<td style="height: 2px; background: #ddd; font-size: 1px;" colspan="3" valign="top" bgcolor="#dddddd" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td width="45%">Discounted Subtotal:</td>
+								<td width="60%">{$bundle.new_sub}</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td width="45%">Tax:</td>
+								<td width="60%">{$bundle.tax}</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr style="height: 2px; background: #000; font-size: 1px;">
+								<td style="height: 2px; background: #000; font-size: 1px;" colspan="3" valign="top" bgcolor="#000000" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="45%">Shipping:</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="60%">{$bundle.shipping}</td>
+							</tr>
+							<tr>
+								<td width="195%">&nbsp;</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="45%">Total</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="60%">{$bundle.total}</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="3" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr style="height: 2px; background: #000; font-size: 1px;">
+								<td style="height: 2px; background: #000; font-size: 1px;" colspan="3" valign="top" bgcolor="#000000" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 1px; font-size: 1px;">
+								<td colspan="3" valign="top" height="1">{/foreach}</td>
+							</tr>
+						</tbody>
+					</table>
+					<table style="width: 100%; font-family: Arial, Helvetica, sans-serif; color: #999; border-collapse: collapse; padding: 0; margin: 0;" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td style="font-weight: bold; color: #000;" align="left" width="75%"><strong>Grand Total</strong></td>
+								<td width="100%">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">Currency:</td>
+								<td width="75%">{$fields.currency_iso}</td>
+								<td width="75%">Subtotal:</td>
+								<td width="100%">{$fields.subtotal}</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td align="right" width="75%">&nbsp;</td>
+								<td width="75%">Discount:</td>
+								<td width="100%">{$fields.deal_tot}</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr style="height: 2px; background: #ddd; font-size: 1px;">
+								<td style="height: 2px; background: #ddd; font-size: 1px;" colspan="5" valign="top" bgcolor="#dddddd" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td width="75%">Discounted Subtotal:</td>
+								<td width="100%">{$fields.new_sub}</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">Tax Rate:</td>
+								<td width="75%">{$fields.taxrate_value}</td>
+								<td width="75%">Tax:</td>
+								<td width="100%">{$fields.tax}</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr style="height: 2px; background: #000; font-size: 1px;">
+								<td style="height: 2px; background: #000; font-size: 1px;" colspan="5" valign="top" bgcolor="#000000" height="2">&nbsp;</td>
+							</tr>
+							<tr style="height: 8px; font-size: 1px;">
+								<td style="height: 8px; font-size: 1px;" colspan="5" valign="top" height="8">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">Shipping Provider:</td>
+								<td width="75%">{$fields.shipper_name}</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="75%">Shipping:</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="100%">{$fields.shipping}</td>
+							</tr>
+							<tr>
+								<td width="175%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td width="75%">&nbsp;</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="75%">Total</td>
+								<td style="text-align: left; font-weight: bold; color: #000;" width="100%">{$fields.total}</td>
+							</tr>
+						</tbody>
+					</table>
+					<table style="width: 100%; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 80%; color: #999; border-collapse: collapse; padding: 0; margin: 0;" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr style="height: 2px; background: #ddd; font-size: 1px;">
+								<td style="height: 2px; background: #ddd; font-size: 1px;" colspan="2" valign="top" bgcolor="#dddddd" height="2">&nbsp;</td>
+							</tr>
+							<tr>
+								<td style="height: 10px; font-size: 1px;" valign="top" height="10" colspan="2">&nbsp;</td>
+							</tr>
+							<tr>
+								<td valign="top" height="30" colspan="2"><strong>Payment Options</strong></td>
+							</tr>
+							<tr>
+								<td style="line-height: 1.5;" valign="top" width="160%">
+								<h2 style="color: #000; font-size: 130%; line-height: 1.5;">Bank Wire</h2>
+								<strong style="color: #333;">Beneficiary:</strong> American Express International Inc.<br /><strong style="color: #333;">Address:</strong> PO Box 537, Chelsea, VIC., 3196, Australia<br /><strong style="color: #333;">Account Number:</strong> 0015002201<br /><strong style="color: #333;">Bank Name:</strong> JPMorgan Chase<br /><strong style="color: #333;">Bank Address:</strong> AAP Centre Level 32, 259 George Street, <br />Sydney NSW 2000, Australia<br /><strong style="color: #333;">Bank's SWIFT Code:</strong> CHASAU2X<br /><strong style="color: #333;">Payment Reference:</strong> Flywire Pty Ltd 8624<br /> When making payment, please include your invoice number or company <br />name in your payment description.<br /><br /><br /></td>
+								<td style="line-height: 1.5;" valign="top" width="40%">
+								<h2 style="color: #000; font-size: 130%; line-height: 1.5;">PayPal</h2>
+								<p>Please send your payments to ourcompany@ourdomain.com paypal id or click the PayPal payment link below.</p>
+								<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=payments@xfive.com&amp;lc=US&amp;item_name=Inv{$fields.quote_num}%20for%20{$bundle.name}&amp;amount={$fields.total}&amp;currency_code={$fields.currency_iso}">Pay Now</a>
+								</td>
+								
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
