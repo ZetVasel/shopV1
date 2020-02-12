@@ -34,3 +34,6 @@ Route::get('template', 'testController@index'); // download
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('search.search', 'searchController@search');
+Route::get('/{id}', ['as' => 'products.product', 'uses' => 'searchController@index']); // for opening
