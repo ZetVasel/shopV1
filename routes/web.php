@@ -37,3 +37,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('search.search', 'searchController@search');
 Route::get('/{id}', ['as' => 'products.product', 'uses' => 'searchController@index']); // for opening
+
+Route::post('/', 'formController@storeEmail');
