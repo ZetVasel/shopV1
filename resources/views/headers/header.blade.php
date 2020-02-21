@@ -6,7 +6,7 @@
         <a href="#">Link-3</a>
         <a href="{{URL::to('product/4')}}">Product(test)-4</a>
         <a href="#">Link-5</a>
-        <a href="#">Link-6</a>
+        <a href="{{URL::to('showCart')}}">Cart-test</a>
     </div>
     <a class="navbar-brand" href="{{'/'}}">Main elements
         <img src="{{URL('storage/icons/shopping-bag.svg')}}" width="30" height="30" alt="No icon">
@@ -22,7 +22,7 @@
                     Dropdown ( for PDF )
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{URL::to('templateTest')}}">PDF templat</a>
+                    <a class="dropdown-item" href="{{URL::to('templateTest')}}">PDF template</a>
                     <a class="dropdown-item" href="{{URL::to('template')}}">PDF download</a>
                     <div class="dropdown-divider"></div>
                     @if (Route::has('login'))

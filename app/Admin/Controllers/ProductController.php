@@ -29,6 +29,8 @@ class ProductController extends AdminController
         $grid->column('id', __('ID'))->sortable();
         $grid->column('productId',__('productId'));
         $grid->column('productName',__('productName'));
+        $grid->column('price', __('price'));
+        $grid->column('quantity', __('quantity'));
         $grid->column('description',__('description'));
         $grid->column('images',__('images'));
         $grid->column('created_at', __('Created at'))->sortable();
@@ -50,6 +52,8 @@ class ProductController extends AdminController
 
         $show->field('productId',__('productId'));
         $show->field('productName',__('productName'));
+        $show->field('price', __('price'));
+        $show->field('quantity', __('quantity'));
         $show->field('description',__('description'));
         $show->field('images',__('images'));
         $show->field('created_at', __('Created at'));
@@ -70,6 +74,8 @@ class ProductController extends AdminController
         $form = new Form(new Product());
         $form->number('productId',__('productId'));
         $form->text('productName',__('productName'));
+        $form->number('price', __('price'));
+        $form->number('quantity', __('quantity'));
         $form->text('description',__('description'));
         $form->text('images',__('images'));
 
