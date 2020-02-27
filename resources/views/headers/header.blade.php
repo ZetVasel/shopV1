@@ -5,7 +5,7 @@
         <a href="{{URL::to('links.linkTwo')}}">Link-Two</a>
         <a href="#">Link-3</a>
         <a href="{{URL::to('product/4')}}">Product(test)-4</a>
-        <a href="#">Link-5</a>
+        <a href="{{URL::to('products.showProductList')}}">All products List</a>
         <a href="{{URL::to('showCart')}}">Cart-test</a>
     </div>
     <a class="navbar-brand" href="{{'/'}}">Main elements

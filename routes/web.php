@@ -10,6 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Maatwebsite\Excel\Facades\Excel;
+
+Route::get('/download', function (){
+    return Excel::download(new \App\Exports\ProductExport(),'product.xlsx');
+});
+
 
 Route::get('/', function () {
     return view('main');
@@ -18,6 +24,7 @@ Route::get('/', function () {
 
 Route::get('frontend.show', 'productFrontendController@show');
 Route::get('frontend.showImage', 'imageController@showImage');
+Route::get('products.showProductList', 'productController@show');
 
 Route::get('product/{id}', ['as' => 'products.product', 'uses' => 'productController@index']); // for opening inside of product
 Route::get('showCart/{id}', ['as' => 'showCart', 'uses' => 'showCartController@show']); // for adding product to cart
